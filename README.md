@@ -28,7 +28,7 @@ In this project, the Client Server Architecture would be implemented using MySQL
 -  Use *mysql server's* local IP addresses to connect from *mysql client*.  
 
 - MySql Server Private IP address: 172.31.32.161
-- MySql Server Public IP address: 172.31.43.240
+- MySql Client Private IP address: 172.31.43.240
 - By default the MySQL servers uses TCP port 3306. This would be opened by creating new entry 'Inbound rules' in *mysql server' Security Groups. For extra security, only the specific local IP address of mysql client would be allowed. Other IP addresses would not be allowed
 
 ![SecurityGroup](./img/5.mysqlcleintremoteIPSG.png)
@@ -52,7 +52,7 @@ The maxvasvasAdmin_user was also granted permission to perform operations on the
 
 The image below shows the connection from mysql client  Linux server to the mysql Server Linux server.
 
-![SecurityGroup](./img/connecttoserver.png)
+![ConnectToServerFromClient](./img/connectedToServerClient.png)
 
 The image below shows the sucessfull query of the mysql server from mysql client showing the database named MaxChips
 
